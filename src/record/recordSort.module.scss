@@ -1,0 +1,35 @@
+@import 'css/custom/_required.scss';
+
+.card {
+  max-width: 64rem;
+}
+
+.title {
+  margin-right: 0.8rem;
+}
+
+.back {
+  min-width: 12rem;
+}
+
+.select {
+  margin-bottom: 1.5rem !important;
+
+  @include media-breakpoint-up(md) {
+    max-width: 50%;
+  }
+}
+
+.item {
+  cursor: move;
+  cursor: grab;
+}
+
+.dragging {
+  cursor: grabbing;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  min-width: 2.4rem;
+}

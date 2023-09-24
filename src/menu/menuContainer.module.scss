@@ -1,0 +1,7 @@
+@import 'css/custom/_required.scss';
+
+.menu {
+  @include media-breakpoint-down(md) {
+    height: 100vh;
+  }
+}

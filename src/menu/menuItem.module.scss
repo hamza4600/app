@@ -1,0 +1,55 @@
+@import 'css/custom/_required.scss';
+
+.item {
+  margin-top: -$border-width;
+  font-size: $font-size-sm;
+  letter-spacing: 0.1rem;
+  
+
+  &:first-child {
+    border-top: 0 !important;
+    margin-top: 0;
+  }
+
+  &:last-child {
+    border-bottom: 0 !important;
+  }
+}
+
+.link {
+  position: relative;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  color: $gray-600;
+  line-height: $btn-line-height;
+
+  svg {
+    color: $gray-400;
+    font-size: 2.2rem;
+  }
+
+  &:hover,
+  &:global(.active) {
+    color: $link-color;
+
+    svg {
+      color: $link-color;
+    }
+  }
+
+  &:global(.active) {
+    background-color: $gray-100;
+    font-weight: $font-weight-bold;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 20%;
+      height: 60%;
+      width: 0.5rem;
+      border-radius: 0 0.5rem 0.5rem 0;
+      background-color: $yellow;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import 'css/custom/_required.scss';
+
+.header {
+  min-height: $header-height;
+}
+
+.logo {
+  @include media-breakpoint-up(lg) {
+    width: $menu-width;
+    border-right: 1px solid rgba($white, 0.2);
+  }
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tools {
+  border-right: 1px solid rgba($white, 0.2);
+}

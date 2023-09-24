@@ -1,0 +1,18 @@
+@import 'css/custom/_required.scss';
+
+.container {
+  min-height: $header-height;
+}
+
+.header {
+  display: none;
+  min-height: $header-height;
+}
+
+:global(.menu-open) {
+  @include media-breakpoint-down(md) {
+    :local(.header) {
+      display: flex;
+    }
+  }
+}

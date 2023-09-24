@@ -1,0 +1,10 @@
+@import 'css/custom/_required.scss';
+
+$badge-size: 1.8rem;
+
+.badge {
+  min-height: $badge-size;
+  min-width: $badge-size;
+  background-color: $gray-300;
+  font-weight: $font-weight-bolder;
+}

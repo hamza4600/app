@@ -1,0 +1,26 @@
+@import 'css/custom/_required.scss';
+
+.sidebar {
+  height: 100%;
+  width: $menu-width;
+  margin-left: -$menu-width;
+  transition: all 0.1s ease-in-out;
+
+  &[data-show="true"] {
+    margin-left: 0;
+    box-shadow: 3px 0px 11px rgba(0, 0, 0, 0.05);
+  }
+
+  @include media-breakpoint-down(md) {
+    position: fixed;
+    top: 0;
+    z-index: $zindex-fixed;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include media-breakpoint-up(lg) {
+    box-shadow: 3px 0px 11px rgba(0, 0, 0, 0.05);
+    margin-left: 0;
+  }
+}

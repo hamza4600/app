@@ -1,0 +1,37 @@
+@import 'css/custom/_required.scss';
+
+.nav {
+  @include media-breakpoint-down(md) {
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+  }
+}
+
+$sub-nav-y-spacing: 1rem;
+
+.subNavItem {
+  border-top: none !important;
+  border-bottom: none !important;
+  padding-right: 0 !important;
+}
+
+.subNavLink {
+  padding-top: $sub-nav-y-spacing;
+  padding-bottom: $sub-nav-y-spacing;
+  padding-right: 0 !important;
+
+  &:global(.active) {
+    &:before {
+      content: none;
+    }
+  }
+}
+
+.subNavText {
+  margin-top: -$sub-nav-y-spacing;
+  margin-bottom: -$sub-nav-y-spacing;
+  padding-top: $sub-nav-y-spacing;
+  padding-bottom: $sub-nav-y-spacing;
+  border-bottom: 1px solid $border-color;
+}
